@@ -398,25 +398,7 @@
                     </a>
                 </li>
 
-                <li class="treeview">
-                    <a href="#">
-                        <i class="fa fa-folder"></i> <span>مثال ها</span>
-                        <span class="pull-left-container">
-              <i class="fa fa-angle-right pull-left"></i>
-            </span>
-                    </a>
-                    <ul class="treeview-menu">
-                        <li><a href="../../pages/examples/invoice.html"><i class="fa fa-circle-o"></i> سفارش</a></li>
-                        <li><a href="../../pages/examples/profile.html"><i class="fa fa-circle-o"></i> پروفایل</a></li>
-                        <li><a href="../../pages/examples/login.html"><i class="fa fa-circle-o"></i> صفحه ورود</a></li>
-                        <li><a href="../../pages/examples/register.html"><i class="fa fa-circle-o"></i> ثبت نام</a></li>
-                        <li><a href="../../pages/examples/lockscreen.html"><i class="fa fa-circle-o"></i> قفل صفحه</a></li>
-                        <li><a href="../../pages/examples/404.html"><i class="fa fa-circle-o"></i> ارور ۴۰۴</a></li>
-                        <li><a href="../../pages/examples/500.html"><i class="fa fa-circle-o"></i> ارور ۵۰۰</a></li>
-                        <li><a href="../../pages/examples/blank.html"><i class="fa fa-circle-o"></i> صفحه خالی</a></li>
-                        <li><a href="../../pages/examples/pace.html"><i class="fa fa-circle-o"></i> صفحه سریع</a></li>
-                    </ul>
-                </li>
+
                 <li class="treeview">
                     <a href="#">
                         <i class="fa fa-share"></i> <span>خروج از سیستم</span>
@@ -477,7 +459,8 @@
 
         <!-- Main content -->
         <section class="content">
-
+<div class="row">
+    <div class="col-md-12">
             <!-- SELECT2 EXAMPLE -->
             <div class="box box-default">
                 <div class="box-header with-border">
@@ -492,7 +475,9 @@
                 <div class="box-body">
                     <div class="row">
 
-                        <div class="col-md-4">
+                        <div class="col-md-3">
+                            <div class="row">
+                                <div class="col-md-12">
                             <div class="form-group">
                                 <label>شماره مجوز</label>
                                 <select class="form-control select2" style="width: 100%;">
@@ -505,20 +490,86 @@
                                     <option>1321</option>
                                 </select>
                             </div>
-                        </div>
-                        <div class="col-md-4">
-                                <div class="form-group">
-                                    <label>نام پیمانکار</label>
-                                    <select class="form-control select2" style="width: 100%;">
-                                        <option selected="selected">محمد محتشم</option>
-                                        <option>محمد محتشم</option>
-                                        <option>هاشم افسری</option>
-                                        <option>نیما یوشیج</option>
-                                        <option>الکساندر گراهامبل</option>
-                                        <option>دروازه بان ایران</option>
-                                        <option>قرمزته</option>
-                                    </select>
                                 </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label>انجام عملیات</label>
+                                            <select class="form-control select2" style="width: 100%;">
+                                                <option selected="selected">2215489</option>
+                                                <option>102213</option>
+                                                <option>52446</option>
+                                                <option>12345</option>
+                                                <option>88795</option>
+                                                <option>8546</option>
+                                                <option>1321</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label>مکان</label>
+                                        <select class="form-control select2" style="width: 100%;">
+                                            <option selected="selected">2215489</option>
+                                            <option>102213</option>
+                                            <option>52446</option>
+                                            <option>12345</option>
+                                            <option>88795</option>
+                                            <option>8546</option>
+                                            <option>1321</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <a href="#" class="btn hidden-xs" style="background-color:#d61577;border-color:#ad0b5d;font-weight:bold;color:#FFF">شروع جستجو</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label>نام پیمانکار</label>
+                                        <select class="form-control select2" style="width: 100%;">
+                                            <option selected="selected">محمد محتشم</option>
+                                            <option>محمد محتشم</option>
+                                            <option>هاشم افسری</option>
+                                            <option>نیما یوشیج</option>
+                                            <option>الکساندر گراهامبل</option>
+                                            <option>دروازه بان ایران</option>
+                                            <option>قرمزته</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label>حوزه کاری:</label>
+                                        <select class="form-control select2" style="width: 100%;">
+                                            <option selected="selected">انتخاب حوزه</option>
+                                            <option>توقف گاه</option>
+                                            <option>هاشم افسری</option>
+                                            <option>نیما یوشیج</option>
+                                            <option>الکساندر گراهامبل</option>
+                                            <option>دروازه بان ایران</option>
+                                            <option>قرمزته</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label>نوع مجوز:</label>
+                                        <select class="form-control select2" style="width: 100%;">
+                                            <option selected="selected">انتخاب نوع مجوز</option>
+                                            <option>بهره برداری</option>
+                                            <option>هاشم افسری</option>
+                                            <option>نیما یوشیج</option>
+                                            <option>الکساندر گراهامبل</option>
+                                            <option>دروازه بان ایران</option>
+                                            <option>قرمزته</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
 
                             <!-- /.form-group -->
                                 <!--<div class="form-group">
@@ -535,7 +586,186 @@
                                 </div>
                                 <!-- /.form-group -->
                         <!-- /.col -->
-                        <div class="col-md-4">
+                        <div class="col-md-3">
+                            <div class="row">
+                                <div class="col-md-12">
+                                <div class="form-group">
+                                <label>انتخاب تاریخ مجوز </label>
+                                <div class="input-group date">
+                                    <div class="input-group-addon">
+                                        <i class="fa fa-calendar"></i>
+                                    </div>
+                                    <input type="text" id="tarikh1" class="form-control pull-right">
+                                </div>
+                                <div class="input-group date">
+                                    <div class="input-group-addon">
+                                        <i class="fa fa-calendar"></i>
+                                    </div>
+                                    <input type="text" id="tarikh2" class="form-control pull-right">
+                                </div>
+                                <!-- /.input group -->
+                                <br>
+                            </div>
+                                </div>
+                                <div class="col-md-12">
+                                            <!-- checkbox -->
+                                            <div class="form-group">
+                                                <label>
+                                                    <input type="checkbox" class="flat-red">
+                                                    فعالیت در اماکن غیر فنی
+                                                </label>
+                                            </div>
+                                            <div class="form-group">
+                                                <label>
+                                                    <input type="checkbox" class="flat-red">
+                                                    نیاز به قطع برق(OCS) دارد</label>
+                                            </div>
+
+                                </div>
+                                        <!-- /.box -->
+                                </div>
+
+                            <!--    <div class="form-group">
+                                    <label>چند انتخابی</label>
+                                    <select class="form-control select2" multiple="multiple" data-placeholder="Select a State"
+                                            style="width: 100%;">
+                                        <option>تهران</option>
+                                        <option>مشهد</option>
+                                        <option>اصفهان</option>
+                                        <option>شیراز</option>
+                                        <option>اهواز</option>
+                                        <option>تبریز</option>
+                                        <option>کرج</option>
+                                    </select>
+                            </div>-->
+                            <!-- /.form-group -->
+                            <!--<div class="form-group">
+                                <label>گزینه های غیرفعال</label>
+                                <select class="form-control select2" style="width: 100%;">
+                                    <option selected="selected">تهران</option>
+                                    <option>مشهد</option>
+                                    <option disabled="disabled">اصفهان غیرفعال</option>
+                                    <option>شیراز</option>
+                                    <option>اهواز</option>
+                                    <option>تبریز</option>
+                                    <option>کرج</option>
+                                </select>
+                            </div>-->
+                            <!-- /.form-group -->
+                        </div>
+                        <div class="col-md-3">
+                            <!-- iCheck -->
+                            <div class="box box-success">
+                                <div class="box-header">
+                                    <h3 class="box-title">وضعیت مجوز</h3>
+                                </div>
+                                <div class="box-body">
+                                    <!-- Minimal style -->
+
+
+
+
+
+                                    <!-- checkbox -->
+                                    <div class="form-group">
+                                        <label>
+                                            <input type="checkbox" class="flat-red">
+                                            تایید شده توسط OCC
+                                        </label>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>
+                                            <input type="checkbox" class="flat-red">
+                                            تایید شده توسط ناظر
+                                        </label>
+                                    </div> <div class="form-group">
+                                        <label>
+                                            <input type="checkbox" class="flat-red">
+                                            رد شده توسط OCC
+                                        </label>
+
+                                </div>
+                                <!-- /.box-body -->
+                                <div class="box-footer">
+                                    راهنمای انتخاب<a href="#"> گزینه ها  </a>
+                                </div>
+                            </div>
+                            <!-- /.box -->
+                        </div>
+                        </div>
+                        <!-- /.col -->
+                    </div>
+                    <!-- /.row -->
+                </div>
+
+                <!-- /.box-body -->
+                <div class="box-footer">
+
+                    برای کسب اطلاعات بیشتر و استفاده از راهنمای سیستم جامع صدور مجوز به بخش <a href="https://select2.github.io/">مستندات </a> مراجعه کنید
+                </div>
+            </div>
+            <!-- /.box -->
+
+    </div>
+    <div class="col-md-4">
+            <!-- SELECT2 EXAMPLE -->
+            <div class="box box-default">
+                <div class="box-header with-border">
+                    <h3 class="box-title">فیلتر های جستجو </h3>
+
+                    <div class="box-tools pull-right">
+                        <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                        <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-remove"></i></button>
+                    </div>
+                </div>
+                <!-- /.box-header -->
+                <div class="box-body">
+                    <div class="row">
+
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label>شماره مجوز</label>
+                                <select class="form-control select2" style="width: 100%;">
+                                    <option selected="selected">2215489</option>
+                                    <option>102213</option>
+                                    <option>52446</option>
+                                    <option>12345</option>
+                                    <option>88795</option>
+                                    <option>8546</option>
+                                    <option>1321</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label>نام پیمانکار</label>
+                                <select class="form-control select2" style="width: 100%;">
+                                    <option selected="selected">محمد محتشم</option>
+                                    <option>محمد محتشم</option>
+                                    <option>هاشم افسری</option>
+                                    <option>نیما یوشیج</option>
+                                    <option>الکساندر گراهامبل</option>
+                                    <option>دروازه بان ایران</option>
+                                    <option>قرمزته</option>
+                                </select>
+                            </div>
+
+                            <!-- /.form-group -->
+                            <!--<div class="form-group">
+                                <label>غیرفعال</label>
+                                <select class="form-control select2" disabled="disabled" style="width: 100%;">
+                                    <option selected="selected">تهران</option>
+                                    <option>مشهد</option>
+                                    <option>اصفهان</option>
+                                    <option>شیراز</option>
+                                    <option>اهواز</option>
+                                    <option>تبریز</option>
+                                    <option>کرج</option>
+                                </select>-->
+                        </div>
+                        <!-- /.form-group -->
+                        <!-- /.col -->
+                        <div class="col-md-3">
                             <div class="form-group">
                                 <label>انتخاب تاریخ مجوز </label>
                                 <div class="input-group date">
@@ -543,8 +773,12 @@
                                         <i class="fa fa-calendar"></i>
                                     </div>
                                     <input type="text" id="tarikh1" class="form-control pull-right">
+                                </div>
+                                <div class="input-group date">
+                                    <div class="input-group-addon">
+                                        <i class="fa fa-calendar"></i>
+                                    </div>
                                     <input type="text" id="tarikh2" class="form-control pull-right">
-                                    <input type="text" id="tarikhAlt" class="form-control pull-right">
                                 </div>
                                 <!-- /.input group -->
                                 <br>
@@ -577,282 +811,60 @@
                             </div>-->
                             <!-- /.form-group -->
                         </div>
+                        <div class="col-md-3">
+                            <!-- iCheck -->
+                            <div class="box box-success">
+                                <div class="box-header">
+                                    <h3 class="box-title">وضعیت مجوز</h3>
+                                </div>
+                                <div class="box-body">
+                                    <!-- Minimal style -->
+
+
+
+
+
+                                    <!-- checkbox -->
+                                    <div class="form-group">
+                                        <label>
+                                            <input type="checkbox" class="flat-red">
+                                            تایید شده توسط OCC
+                                        </label>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>
+                                            <input type="checkbox" class="flat-red">
+                                            تایید شده توسط ناظر
+                                        </label>
+                                    </div> <div class="form-group">
+                                        <label>
+                                            <input type="checkbox" class="flat-red">
+                                            رد شده توسط OCC
+                                        </label>
+
+                                    </div>
+                                    <!-- /.box-body -->
+                                    <div class="box-footer">
+                                        راهنمای انتخاب<a href="#"> گزینه ها  </a>
+                                    </div>
+                                </div>
+                                <!-- /.box -->
+                            </div>
+                        </div>
                         <!-- /.col -->
                     </div>
                     <!-- /.row -->
                 </div>
+
                 <!-- /.box-body -->
                 <div class="box-footer">
-                    برای کسب اطلاعات بیشتر و استفاده از راهنمای این کتابخانه به <a href="https://select2.github.io/">مستندات </a> مراجعه کنید
+                    برای کسب اطلاعات بیشتر و استفاده از راهنمای سیستم جامع صدور مجوز به بخش <a href="https://select2.github.io/">مستندات </a> مراجعه کنید
                 </div>
             </div>
             <!-- /.box -->
+    </div>
 
-            <div class="row">
-                <div class="col-md-6">
-
-                    <div class="box box-danger">
-                        <div class="box-header">
-                            <h3 class="box-title">قالب آماده ورودی</h3>
-                        </div>
-                        <div class="box-body">
-                            <!-- Date dd/mm/yyyy -->
-                            <div class="form-group">
-                                <label>قالب تاریخ</label>
-
-                                <div class="input-group">
-                                    <div class="input-group-addon">
-                                        <i class="fa fa-calendar"></i>
-                                    </div>
-                                    <input type="text" class="form-control" data-inputmask="'alias': 'dd/mm/yyyy'" data-mask>
-                                </div>
-                                <!-- /.input group -->
-                            </div>
-                            <!-- /.form group -->
-
-                            <!-- Date mm/dd/yyyy -->
-                            <div class="form-group">
-                                <div class="input-group">
-                                    <div class="input-group-addon">
-                                        <i class="fa fa-calendar"></i>
-                                    </div>
-                                    <input type="text" class="form-control" data-inputmask="'alias': 'mm/dd/yyyy'" data-mask>
-                                </div>
-                                <!-- /.input group -->
-                            </div>
-                            <!-- /.form group -->
-
-                            <!-- phone mask -->
-                            <div class="form-group">
-                                <label>تلفن</label>
-
-                                <div class="input-group">
-                                    <div class="input-group-addon">
-                                        <i class="fa fa-phone"></i>
-                                    </div>
-                                    <input type="text" class="form-control" data-inputmask='"mask": "(999) 999-9999"' data-mask>
-                                </div>
-                                <!-- /.input group -->
-                            </div>
-                            <!-- /.form group -->
-
-                            <!-- phone mask -->
-                            <div class="form-group">
-                                <label>موبایل</label>
-
-                                <div class="input-group">
-                                    <div class="input-group-addon">
-                                        <i class="fa fa-phone"></i>
-                                    </div>
-                                    <input type="text" class="form-control"
-                                           data-inputmask="'mask': ['999-999-9999 [x99999]', '+099 99 99 9999[9]-9999']" data-mask>
-                                </div>
-                                <!-- /.input group -->
-                            </div>
-                            <!-- /.form group -->
-
-                            <!-- IP mask -->
-                            <div class="form-group">
-                                <label>آی پی</label>
-
-                                <div class="input-group">
-                                    <div class="input-group-addon">
-                                        <i class="fa fa-laptop"></i>
-                                    </div>
-                                    <input type="text" class="form-control" data-inputmask="'alias': 'ip'" data-mask>
-                                </div>
-                                <!-- /.input group -->
-                            </div>
-                            <!-- /.form group -->
-
-                        </div>
-                        <!-- /.box-body -->
-                    </div>
-                    <!-- /.box -->
-
-                    <div class="box box-info">
-                        <div class="box-header">
-                            <h3 class="box-title">رنگ و زمان</h3>
-                        </div>
-                        <div class="box-body">
-                            <!-- Color Picker -->
-                            <div class="form-group">
-                                <label>انتخاب رنگ</label>
-                                <input type="text" class="form-control my-colorpicker1">
-                            </div>
-                            <!-- /.form group -->
-
-                            <!-- Color Picker -->
-                            <div class="form-group">
-                                <label>انتخاب رنگ با دکمه</label>
-
-                                <div class="input-group my-colorpicker2">
-                                    <input type="text" class="form-control">
-
-                                    <div class="input-group-addon">
-                                        <i></i>
-                                    </div>
-                                </div>
-                                <!-- /.input group -->
-                            </div>
-                            <!-- /.form group -->
-
-                            <!-- time Picker -->
-                            <div class="bootstrap-timepicker">
-                                <div class="form-group">
-                                    <label>انتخاب زمان</label>
-
-                                    <div class="input-group">
-                                        <input type="text" class="form-control timepicker">
-
-                                        <div class="input-group-addon">
-                                            <i class="fa fa-clock-o"></i>
-                                        </div>
-                                    </div>
-                                    <!-- /.input group -->
-                                </div>
-                                <!-- /.form group -->
-                            </div>
-                        </div>
-                        <!-- /.box-body -->
-                    </div>
-                    <!-- /.box -->
-
-                </div>
-                <!-- /.col (left) -->
-                <div class="col-md-6">
-                    <div class="box box-primary">
-                        <div class="box-header">
-                            <h3 class="box-title">انتخاب تاریخ <small>تاریخ ها شمسی شده و با خروجی تایم اسمتپ آماده ذخیره در دیتابیس هستند</small></h3>
-                        </div>
-                        <div class="box-body">
-
-                            <div class="form-group">
-                                <label>انتخاب تاریخ شمسی با خروجی تایم استمپ </label>
-                                <div class="input-group date">
-                                    <div class="input-group-addon">
-                                        <i class="fa fa-calendar"></i>
-                                    </div>
-                                    <input type="text" id="tarikh" class="form-control pull-right">
-                                    <input type="text" id="tarikhAlt" class="form-control pull-right">
-                                </div>
-                                <!-- /.input group -->
-                                <br>
-                                <p>استفاده از کتابخانه باباخانی، برای تغییرات <a href="http://babakhani.github.io/PersianWebToolkit/doc/datepicker/">مستندات این کتابخانه</a> را مشاهده کنید </p>
-                            </div>
-
-                        </div>
-                        <!-- /.box-body -->
-                    </div>
-                    <!-- /.box -->
-
-                    <!-- iCheck -->
-                    <div class="box box-success">
-                        <div class="box-header">
-                            <h3 class="box-title">کتاب خانه چک باکس و رادیو iCheck</h3>
-                        </div>
-                        <div class="box-body">
-                            <!-- Minimal style -->
-
-                            <!-- checkbox -->
-                            <div class="form-group">
-                                <label>
-                                    <input type="checkbox" class="minimal" checked>
-                                </label>
-                                <label>
-                                    <input type="checkbox" class="minimal">
-                                </label>
-                                <label>
-                                    <input type="checkbox" class="minimal" disabled>
-                                    نمونه چک باکس
-                                </label>
-                            </div>
-
-                            <!-- radio -->
-                            <div class="form-group">
-                                <label>
-                                    <input type="radio" name="r1" class="minimal" checked>
-                                </label>
-                                <label>
-                                    <input type="radio" name="r1" class="minimal">
-                                </label>
-                                <label>
-                                    <input type="radio" name="r1" class="minimal" disabled>
-                                    نمونه رادیو
-                                </label>
-                            </div>
-
-                            <!-- Minimal red style -->
-
-                            <!-- checkbox -->
-                            <div class="form-group">
-                                <label>
-                                    <input type="checkbox" class="minimal-red" checked>
-                                </label>
-                                <label>
-                                    <input type="checkbox" class="minimal-red">
-                                </label>
-                                <label>
-                                    <input type="checkbox" class="minimal-red" disabled>
-                                    قالب قرمز چک باکس
-                                </label>
-                            </div>
-
-                            <!-- radio -->
-                            <div class="form-group">
-                                <label>
-                                    <input type="radio" name="r2" class="minimal-red" checked>
-                                </label>
-                                <label>
-                                    <input type="radio" name="r2" class="minimal-red">
-                                </label>
-                                <label>
-                                    <input type="radio" name="r2" class="minimal-red" disabled>
-                                    قالب قرمز رادیو
-                                </label>
-                            </div>
-
-                            <!-- Minimal red style -->
-
-                            <!-- checkbox -->
-                            <div class="form-group">
-                                <label>
-                                    <input type="checkbox" class="flat-red" checked>
-                                </label>
-                                <label>
-                                    <input type="checkbox" class="flat-red">
-                                </label>
-                                <label>
-                                    <input type="checkbox" class="flat-red" disabled>
-                                    قالب فلت سبز چک باکس
-                                </label>
-                            </div>
-
-                            <!-- radio -->
-                            <div class="form-group">
-                                <label>
-                                    <input type="radio" name="r3" class="flat-red" checked>
-                                </label>
-                                <label>
-                                    <input type="radio" name="r3" class="flat-red">
-                                </label>
-                                <label>
-                                    <input type="radio" name="r3" class="flat-red" disabled>
-                                    قالب فلت سبز رادیو
-                                </label>
-                            </div>
-                        </div>
-                        <!-- /.box-body -->
-                        <div class="box-footer">
-                            و چندین رنگ و مدل دیگر <a href="http://fronteed.com/iCheck/">مستندات کتاب خانه</a>
-                        </div>
-                    </div>
-                    <!-- /.box -->
-                </div>
-                <!-- /.col (right) -->
-            </div>
-            <!-- /.row -->
-
+</div>
         </section>
         <!-- /.content -->
     </div>
@@ -1092,7 +1104,7 @@
 <!-- Page script -->
 <script>
     $(document).ready(function () {
-        $('#tarikh').persianDatepicker({
+      /*  $('#tarikh').persianDatepicker({
             altField: '#tarikhAlt',
             altFormat: 'X',
             format: 'D MMMM YYYY HH:mm a',
@@ -1100,8 +1112,11 @@
             timePicker: {
                 enabled: true
             },
-        });
+        });*/
+        $('#tarikh1').persianDatepicker();
+        $('#tarikh2').persianDatepicker();
     });
+
     $(function () {
         //Initialize Select2 Elements
         $('.select2').select2()
