@@ -1,3 +1,25 @@
+<?php
+session_start();
+include '../../util/util.php';
+$util = new UtilClass();
+if ( ! $util->haveAcces( 'permit', $_SESSION["userid"] ) ) {
+    exit;
+}
+
+if ( $_SESSION['hashuser'] != $util->hashuser( $_SESSION["userid"] . $_SESSION["username"] . $_SERVER['REMOTE_ADDR'] . $_SERVER['HTTP_USER_AGENT'] ) ) {
+    header( "Location: logout.php" );
+    exit();
+}
+
+include '../permit/lib/permit-config.php';
+include '../permit/lib/permitUtil.php';
+$putil  = new permitUtil();
+$roleid = $putil->getUserRoleID( $_SESSION['userid'] );
+$roleid = $roleid[0];
+include '../permit/lib/showrequest.php';
+$show_req_obj = new show_request();
+$permit_ids = $show_req_obj->get_all_permit_id();
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -464,7 +486,7 @@
             <!-- Archive-Filter -->
             <div class="box box-default">
                 <div class="box-header with-border">
-                    <h3 class="box-title">فیلتر های جستجو </h3>
+                    <h3 class="box-title">فیلتر های جستجو  </h3>
 
                     <div class="box-tools pull-right">
                         <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
@@ -482,13 +504,8 @@
                             <div class="form-group">
                                 <label>شماره مجوز</label>
                                 <select class="form-control select2" style="width: 100%;" id="shomareh_mojavez">
-                                    <option selected="selected">2215489</option>
-                                    <option>102213</option>
-                                    <option>52446</option>
-                                    <option>12345</option>
-                                    <option>88795</option>
-                                    <option>8546</option>
-                                    <option>1321</option>
+                                  <?php echo($permit_ids); ?>
+
                                 </select>
                             </div>
                                 </div>
@@ -510,6 +527,7 @@
                                     <div class="form-group">
                                         <label>مکان</label>
                                         <select class="form-control select2" style="width: 100%;" id="makan">
+
                                             <option selected="selected">2215489</option>
                                             <option>102213</option>
                                             <option>52446</option>

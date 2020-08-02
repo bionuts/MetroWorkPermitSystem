@@ -9,6 +9,33 @@ class show_request
     private $persian_digits = array('۰', '۱', '۲', '۳', '۴', '۵', '۶', '۷', '۸', '۹');
     private $english_digits = array('0', '1', '2', '3', '4', '5', '6', '7', '8', '9');
 
+    //begin minaee
+    public function get_all_permit_id()
+    {   //$results='';
+        $this->connect();
+        $result = mysqli_query($this->conn, "CALL permit_sp_Show_permit_main_ids();");
+        if (mysqli_num_rows($result) > 0) {
+            return   $this->show_all_permit_id($result);
+            // $results = $result;
+        }
+       // $this->close_connect();
+      //  return $results;
+    }
+
+    public function show_all_permit_id($result)
+    {
+        $str = '';
+        $i = 0;
+        $util = new UtilClass();
+        while ($row = mysqli_fetch_assoc($result)) {
+            $permit_id = $row['permit_main_id'];
+            //$colorname = $this->getcolor($nazer_tmp, $occ_tmp);
+            $str .= '<option>'. $permit_id. '</option>';
+        }
+        return $str;
+    }
+    // ends minaee
+
     public function get_today_request_signed_occ($userid)
     {
         $this->connect();
@@ -1195,7 +1222,6 @@ class show_request
         return $str;
     }
 
-		
     private function getcolor($nazer, $occ)
     {
 	

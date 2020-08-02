@@ -18,7 +18,6 @@ $roleid = $putil->getUserRoleID( $_SESSION['userid'] );
 $roleid = $roleid[0];
 include '../lib/showrequest.php';
 $show_req_obj = new show_request();
-
 ?>
 <div id="app_permit" class="windowpanel box_sized" style="width:92%;display:none;top:37px;left: 6%;right: 20px;"
      lastxpos="6%" lastypos="37px" lastwidth="92%" lastheight="" maximize="false" minimize="false">
