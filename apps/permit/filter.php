@@ -472,15 +472,16 @@
                     </div>
                 </div>
                 <!-- /.box-Archive-Filter -->
+                <div class="messages"></div>
+                <!-- <form id="filter-form" method="post" action="filter_ajax.php" role="form"> -->
                 <div class="box-body">
                     <div class="row">
-
                         <div class="col-md-3">
                             <div class="row">
                                 <div class="col-md-12">
                             <div class="form-group">
                                 <label>شماره مجوز</label>
-                                <select class="form-control select2" style="width: 100%;">
+                                <select class="form-control select2" style="width: 100%;" id="shomareh_mojavez">
                                     <option selected="selected">2215489</option>
                                     <option>102213</option>
                                     <option>52446</option>
@@ -494,7 +495,7 @@
                                     <div class="col-md-12">
                                         <div class="form-group">
                                             <label>انجام عملیات</label>
-                                            <select class="form-control select2" style="width: 100%;">
+                                            <select class="form-control select2" style="width: 100%;" id="anjameh-amaliat">
                                                 <option selected="selected">2215489</option>
                                                 <option>102213</option>
                                                 <option>52446</option>
@@ -508,7 +509,7 @@
                                 <div class="col-md-12">
                                     <div class="form-group">
                                         <label>مکان</label>
-                                        <select class="form-control select2" style="width: 100%;">
+                                        <select class="form-control select2" style="width: 100%;" id="makan">
                                             <option selected="selected">2215489</option>
                                             <option>102213</option>
                                             <option>52446</option>
@@ -520,7 +521,7 @@
                                     </div>
                                 </div>
                                 <div class="col-md-12">
-                                    <a href="#" class="btn hidden-xs" style="background-color:#d61577;border-color:#ad0b5d;font-weight:bold;color:#FFF">شروع جستجو</a>
+                                    <a id="search_btn" class="btn hidden-xs" style="background-color:#d61577;border-color:#ad0b5d;font-weight:bold;color:#FFF">شروع جستجو</a>
                                 </div>
                             </div>
                         </div>
@@ -529,7 +530,7 @@
                                 <div class="col-md-12">
                                     <div class="form-group">
                                         <label>نام پیمانکار</label>
-                                        <select class="form-control select2" style="width: 100%;">
+                                        <select class="form-control select2" style="width: 100%;" id="name_peymankar">
                                             <option selected="selected">محمد محتشم</option>
                                             <option>محمد محتشم</option>
                                             <option>هاشم افسری</option>
@@ -543,7 +544,7 @@
                                 <div class="col-md-12">
                                     <div class="form-group">
                                         <label>حوزه کاری:</label>
-                                        <select class="form-control select2" style="width: 100%;">
+                                        <select class="form-control select2" style="width: 100%;" id="hoze_kari">
                                             <option selected="selected">انتخاب حوزه</option>
                                             <option>توقف گاه</option>
                                             <option>هاشم افسری</option>
@@ -557,7 +558,7 @@
                                 <div class="col-md-12">
                                     <div class="form-group">
                                         <label>نوع مجوز:</label>
-                                        <select class="form-control select2" style="width: 100%;">
+                                        <select class="form-control select2" style="width: 100%;" id="noe_mojavez">
                                             <option selected="selected">انتخاب نوع مجوز</option>
                                             <option>بهره برداری</option>
                                             <option>هاشم افسری</option>
@@ -611,13 +612,13 @@
                                             <!-- checkbox -->
                                             <div class="form-group">
                                                 <label>
-                                                    <input type="checkbox" class="flat-red">
+                                                    <input type="checkbox" class="flat-red" id="act_gheyre_fani">
                                                     فعالیت در اماکن غیر فنی
                                                 </label>
                                             </div>
                                             <div class="form-group">
                                                 <label>
-                                                    <input type="checkbox" class="flat-red">
+                                                    <input type="checkbox" class="flat-red" id="osc_on_off">
                                                     نیاز به قطع برق(OCS) دارد</label>
                                             </div>
 
@@ -669,18 +670,18 @@
                                     <!-- checkbox -->
                                     <div class="form-group">
                                         <label>
-                                            <input type="checkbox" class="flat-red">
+                                            <input type="checkbox" class="flat-red" id="ocs_accepted">
                                             تایید شده توسط OCC
                                         </label>
                                     </div>
                                     <div class="form-group">
                                         <label>
-                                            <input type="checkbox" class="flat-red">
+                                            <input type="checkbox" class="flat-red" id="nazer_accepted">
                                             تایید شده توسط ناظر
                                         </label>
                                     </div> <div class="form-group">
                                         <label>
-                                            <input type="checkbox" class="flat-red">
+                                            <input type="checkbox" class="flat-red" id="ocs_reject">
                                             رد شده توسط OCC
                                         </label>
 
@@ -697,9 +698,9 @@
                     </div>
                     <!-- /.row -->
                 </div>
-
+                <!-- </form> -->
                 <!-- /.box-body -->
-                <div class="box-footer">
+                <div class="box-footer" id="div-message">
 
                     برای کسب اطلاعات بیشتر و استفاده از راهنمای سیستم جامع صدور مجوز به بخش <a href="https://select2.github.io/">مستندات </a> مراجعه کنید
                 </div>
@@ -1302,7 +1303,7 @@
 
                 <!-- /.box-body -->
                 <div class="box-footer">
-                    برای کسب اطلاعات بیشتر و استفاده از راهنمای سیستم جامع صدور مجوز به بخش <a href="https://select2.github.io/">مستندات </a> مراجعه کنید
+                    برای کسب اطلاعات بیشتر و استفاده از راهنمای سیستم جامع صدور مجوز به بخش <a href="#">مستندات </a> مراجعه کنید
                 </div>
             </div>
             <!-- /.box -->
@@ -1314,7 +1315,7 @@
     </div>
     <!-- /.content-wrapper -->
     <footer class="main-footer text-left">
-        <strong>Copyleft &copy; 2014-2017 <a href="https://adminlte.io">Almsaeed Studio</a> & <a href="http://hosseinizadeh.ir/adminlte">Alireza Hosseinizadeh</a></strong>
+        <strong>Copyleft &copy; 2020 <a href="https://arput.com">Mehdi Minaee</a> & <a href="https://arput.com">Mehdi Minaee</a></strong>
     </footer>
 
     <!-- Control Sidebar -->
@@ -1346,7 +1347,7 @@
                             <i class="menu-icon fa fa-user bg-yellow"></i>
 
                             <div class="menu-info">
-                                <h4 class="control-sidebar-subheading">آپدیت پروفایل سجاد</h4>
+                                <h4 class="control-sidebar-subheading">آپدیت پروفایل مهدی</h4>
 
                                 <p>تلفن جدید (800)555-1234</p>
                             </div>
@@ -1545,6 +1546,12 @@
 <!-- babakhani datepicker -->
 <script src="../../css/assets/dist/js/persian-date-0.1.8.min.js"></script>
 <script src="../../css/assets/dist/js/persian-datepicker-0.4.5.min.js"></script>
+<!-- START MYCODES-->
+
+<script src="filter.js"></script>
+
+<!-- ENDS MYCODES-->
+
 <!-- Page script -->
 <script>
     $(document).ready(function () {
@@ -1560,7 +1567,11 @@
         $('#tarikh1').persianDatepicker();
         $('#tarikh2').persianDatepicker();
     });
+    <!-- START MYCODES-->
 
+
+
+    <!-- ENDS MYCODES-->
     $(function () {
         //Initialize Select2 Elements
         $('.select2').select2()
